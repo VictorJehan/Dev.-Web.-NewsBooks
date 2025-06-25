@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NewsBooks</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body {
+            background: linear-gradient(45deg, #e3d1e3, #77369f, #d67ed6, #e3d1e3);
+            background-size: 800% 800%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+
+        body::selection {
+            background-color: #e3d1e3;
+            color: #001fac;
+        }
+
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>NewsBooks</h1>
+        </header>
+
+        <main>
+            <div>
+                <h2>O que nós fazemos?</h2>
+                <p>Fornecemos e-books para leitura digital. Queremos ajudar quem
+                    tem dificuldade em começar a estudar um
+                    tema
+                    específico.</p>
+                <h3>Login</h3>
+                <p>Você poderá fazer login com o Google. Para se cadastrar,
+                    usamos autenticação por e-mail e senha, com
+                    opção de
+                    recuperação.</p>
+                <h3>Gerenciamento de E-books</h3>
+                <ul>
+                    <li>Upload de arquivos (como PDF);</li>
+                    <li>Organização por categoria, gênero e autor;</li>
+                    <li>Funções de editar e excluir e-books.</li>
+                </ul>
+            </div>
+
+            <section style>
+                <h1>Cadastre-se já!</h1>
+                <form>
+                    <input type="text" name="nome" placeholder="Nome completo"
+                        required>
+                    <input type="email" name="email" placeholder="E-mail"
+                        required>
+                    <input type="password" name="senha" placeholder="Senha"
+                        required>
+                    <input type="submit" value="Cadastrar" class="cadastrar">
+                </form>
+                <!-- <img src="./img.png"> -->
+            </section>
+        </main>
+
+        <footer style="footer {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        border-top: 2px solid #ddd;
+    }
+   
+    footer h1 {
+        margin-bottom: 10px;
+        color: #4a0072;
+    }
+   
+    footer ul {
+        list-style: none;
+        padding: 0;
+    }
+   
+    footer li {
+        margin-bottom: 5px;
+    }">
+            <h1>Entre em contato conosco</h1>
+            <p>Dúvidas ou sugestões? Fale com a gente por:</p>
+            <ul>
+                <li>E-mail: contatonewsbooks@gmail.com</li>
+                <li>Telefone: (11) 1234-5678</li>
+            </ul>
+        </footer>
+    </body>
+
+</html>
